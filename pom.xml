@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.1</version>
 	
 	<name>Maven Web Application</name>
 	<url>http://mithuntechnologies.com</url>
@@ -87,18 +87,38 @@
 	</dependencies>
 	
 	<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.233.113.232:8081/repository/mt-releases/</url>
-	    </repository>
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.233.113.232:8081/repository/mt-snapshots/</url>
-	    </snapshotRepository>
-	</distributionManagement>
-	
+            <repository>
+              <id>nexus</id>
+              <name>Sushant Releases Nexus Repository</name>
+                <url>http://192.168.230.141:8081/repository/Maven-release/</url>
+            </repository>
+            <snapshotRepository>
+              <id>snapshot</id>
+              <name>Sushant Snapshot Nexus Repository </name>
+              <url>http://192.168.230.141:8081/repository/Maven-SNAPSHOT/</url>
+            </snapshotRepository>
+        </distributionManagement>
+        <repositories>
+	        <repository>
+                	<id>proxy</id>
+                	<url>http://192.168.230.141:8081/repository/Maven-test-proxy/</url>
+        	</repository>
+       		<repository>
+                	<id>nexus</id>
+               		<url>http://192.168.230.141:8081/repository/Maven-SNAPSHOT/</url>
+        	</repository>
+        	<repository>
+                	<id>snapshot</id>
+                	<url>http://192.168.230.141:8081/repository/Maven-release/</url>
+        	</repository>
+  	</repositories> 
+  	<pluginRepositories>
+		<pluginRepository>
+                	<id>proxy</id>
+                	<url>http://192.168.230.141:8081/repository/Maven-test-proxy/</url>
+        	</pluginRepository>
+ 	</pluginRepositories>
+
 	<build>
 		<finalName>maven-web-application</finalName>
 		<plugins>
