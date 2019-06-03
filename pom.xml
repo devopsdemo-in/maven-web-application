@@ -88,12 +88,12 @@
 	
 	<distributionManagement>
             <repository>
-              <id>nexus</id>
+              <id>nexus-release</id>
               <name>Sushant Releases Nexus Repository</name>
                 <url>http://192.168.230.141:8081/repository/Maven-release/</url>
             </repository>
             <snapshotRepository>
-              <id>snapshot</id>
+              <id>nexus-snapshot</id>
               <name>Sushant Snapshot Nexus Repository </name>
               <url>http://192.168.230.141:8081/repository/Maven-SNAPSHOT/</url>
             </snapshotRepository>
