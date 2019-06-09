@@ -90,32 +90,32 @@
             <repository>
               <id>nexus</id>
               <name>Sushant Releases Nexus Repository</name>
-                <url>http://192.168.230.166:8081/repository/Maven-release/</url>
+                <url>http://192.168.230.172:8081/repository/Maven-release/</url>
             </repository>
             <snapshotRepository>
               <id>nexus</id>
               <name>Sushant Snapshot Nexus Repository </name>
-              <url>http://192.168.230.166:8081/repository/Maven-SNAPSHOT/</url>
+              <url>http://192.168.230.172:8081/repository/Maven-SNAPSHOT/</url>
             </snapshotRepository>
         </distributionManagement>
         <repositories>
 	        <repository>
                 	<id>proxy</id>
-                	<url>http://192.168.230.166:8081/repository/Maven-test-proxy/</url>
+                	<url>http://192.168.230.172:8081/repository/Maven-test-proxy/</url>
         	</repository>
        		<repository>
                 	<id>nexus</id>
-               		<url>http://192.168.230.166:8081/repository/Maven-SNAPSHOT/</url>
+               		<url>http://192.168.230.172:8081/repository/Maven-SNAPSHOT/</url>
         	</repository>
         	<repository>
                 	<id>snapshot</id>
-                	<url>http://192.168.230.166:8081/repository/Maven-release/</url>
+                	<url>http://192.168.230.172:8081/repository/Maven-release/</url>
         	</repository>
   	</repositories> 
   	<pluginRepositories>
 		<pluginRepository>
                 	<id>proxy</id>
-                	<url>http://192.168.230.166:8081/repository/Maven-test-proxy/</url>
+                	<url>http://192.168.230.172:8081/repository/Maven-test-proxy/</url>
         	</pluginRepository>
  	</pluginRepositories>
 
